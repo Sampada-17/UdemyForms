@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Forms Practice Problem
+	</title>
+	<style>
+		.social-items{
+			height: 80px;
+			width: 80px;
+			padding-top: 16px;
+			padding-bottom: 16px;
+			padding-left: 32px;
+			padding-right: 32px;
+		}
+		body{
+			background-color: #f2f6ff;
+			margin: 0;
+			padding:16px;
+		}
+		form{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: white;
+			width: 700px;
+			border: 1px solid #ccc;
+		}
+		.form-heading{
+			font-size: 32px;
+			padding-top: 56px;
+			padding-bottom: 32px;
+		}
+		#icons{
+			background-color: #f2f6ff;
+			padding:24px;
+		}
+		.input-items{
+			font-size: 18px;
+			padding-bottom: 12px;
+			margin-bottom: 36px;
+			border: 0;
+			border-bottom: 1px solid #ccc;
+			width: 100%;
+		}
+		#form-section{
+			padding-top: 40px;
+			padding-bottom: 40px;
+			padding-left: 80px;
+			padding-right: 80px;
+		}
+		#button-submit{
+			background-color: #0056ff;
+			padding-bottom: 18px;
+			padding-top: 12px;
+			padding-right: 24px;
+			padding-left: 24px;	
+			font-size: 18px;
+			color: white;
+			border: none;		
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<h1 class="form-heading">Register</h1>
+		<div id="icons">
+			<img class="social-items" src="googlelogo.jpg">
+			<img class="social-items" src="facebooklogo.jpg">
+			<img class="social-items" src="linkedinLogo.jpg">
+			<img class="social-items" src="twitterLogo.jpg">
+		</div>
+
+
+		<div id="form-section">
+			<input class="input-items" type="text" name="username" placeholder="Username" required autofocus>
+		</div>
+		<div id="form-section">
+			<input class="input-items" type="email" name="email" placeholder="Email" required>
+		</div>
+		<div id="form-section">
+			<input class="input-items" type="password" name="password" placeholder="Password" required maxlength="10" minlength="4">
+		</div>
+		<div id="form-section">
+			<input class="input-items" type="password" name="confirm-password" placeholder="Confirm Passowrd" required maxlength="10" minlength="4">
+		</div>
+		<input id="button-submit" type="submit" value="Register">
+	</form>
+
+</body>
+</html>
